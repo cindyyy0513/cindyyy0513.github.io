@@ -40,7 +40,7 @@
         function stat(){
           const y = document.getElementById("form02");
           var sum = 0;
-          var sum01 =0;
+          var sum01 = 0;
           text02 = "";
           for(i=0;i<no;i++){
              sum += Number(y.elements[i].value);
@@ -50,7 +50,7 @@
           text02 += "<br>";
           text02 += "<h4>這" + no + "個數的平均數為 " + sum / no + "<h4>";
           text02 += "<h4>這" + no + "個數的標準差為 " + Math.sqrt((sum01-sum*sum/no)/(no-1)) + "<h4>";
-          document.getElementsById("demo02").innerHTML = text02;
+          document.getElementById("demo02").innerHTML = text02;
           }
         </script>
 	</body>
